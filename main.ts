@@ -19,7 +19,13 @@ const OUTPUT_DIR = process.env.OUTPUT_DIR ?? "/output";
 // freshness. "gaslighting" is truer to the lived annoyance: the router
 // swears you are connected while nothing loads, until you doubt your own
 // laptop. Funny at once, no explanation needed.
-const ENTRY = "gaslighting";
+//
+// Final revision: "situationship" edges it out. It is the fresher angle on
+// the same familiar annoyance - full bars at 3 a.m., gone the moment the
+// meeting starts, never fully committed - and since the winning word
+// becomes the sponsor's network name, it also lands instantly as an SSID
+// every guest understands. One word, 13 characters, no context needed.
+const ENTRY = "situationship";
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
 writeFileSync(join(OUTPUT_DIR, "entry.txt"), ENTRY, "utf8");
