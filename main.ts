@@ -15,8 +15,11 @@ import { join } from "node:path";
 
 const OUTPUT_DIR = process.env.OUTPUT_DIR ?? "/output";
 
-// First draft: the obvious pick. Kept as the baseline to beat.
-const ENTRY = "buffering";
+// Revision 1: "buffering" is the word everyone reaches for, so it loses on
+// freshness. "gaslighting" is truer to the lived annoyance: the router
+// swears you are connected while nothing loads, until you doubt your own
+// laptop. Funny at once, no explanation needed.
+const ENTRY = "gaslighting";
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
 writeFileSync(join(OUTPUT_DIR, "entry.txt"), ENTRY, "utf8");
